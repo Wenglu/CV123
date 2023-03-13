@@ -1,0 +1,145 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(37, 37, 37);
+    font-size: 25px;
+    font-weight: 500;
+    background-color: rgb(255, 248, 238);
+    background-position: center;
+    overflow-x:hidden ;
+    background-size: cover;
+}
+main
+{
+    max-width: 1000px;
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    margin-top:30px ;
+    margin-bottom:30px ;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(26, 35, 53, 0.459);
+    padding: 60px;
+    z-index: 2;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+section
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+#mainInfo ,#knowledge, #lang, #skills, #course
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px rgba(0, 20, 46, 0.329) solid;
+    padding: 0 0 50px 0;
+
+}
+#mainInfo img 
+{
+    /* padding: 20px 50px 20px 20px; */
+    border-radius: 20px;
+    max-width: 300px;
+    max-height: 500px;
+
+}
+.start
+{
+    display: flex;
+}
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+@keyframes squareA {
+    0%{
+    }
+    100%{
+        transform: translateY(300vh);
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    main
+    {
+        width: 700px;
+    }
+    
+}
+@media screen and (max-width: 850px)
+{
+    body
+    {
+    font-size: 15px;
+        
+    }
+    main
+    {
+        width: 500px;
+        padding: 30px;
+
+    }
+    #mainInfo img 
+    {
+        max-width: 200px;
+        padding: 10px 25px 10px 10px;
+    }
+
+}
+@media screen and (max-width: 650px)
+{
+    body
+    {
+    font-size: 10px;
+        
+    }
+    main
+    {
+        width: 300px;
+    }
+    #mainInfo img 
+    {
+        max-width: 100px;
+        padding: 5px 15px 5px 5px;
+    }
+    #mainInfo ,#knowledge, #lang, #skills, #course
+    {
+        padding: 0 0 20px 0;
+    border-bottom: 1px rgba(0, 20, 46, 0.329) solid;
+
+    }
+    section
+    {
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    body
+    {
+    font-size: 10px;
+        
+    }
+    main
+    {
+        width: 270px;
+        padding: 15px;
+
+    }
+    #mainInfo ,#knowledge, #lang, #skills, #course
+    {
+        padding: 0 0 10px 0;
+    }
+    section
+    {
+        margin: 7px;
+    }
+}
